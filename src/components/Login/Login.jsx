@@ -40,7 +40,7 @@ export const Login = ({ setIsLogin }) => {
               onChange={(e) => setCredentials({ ...credentials, "Password": e.target.value })}
             />
           </div>
-          <div className={styles.items}>
+          <div className={styles.btnContainer}>
           <button>submit</button>
           <button type="reset">Reset</button>
           </div>

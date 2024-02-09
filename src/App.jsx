@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { PublicRoute } from "./components/PublicRoute";
-import { ProtectedRoute } from "./components/ProtectedRoute";
+import { PublicRoute } from "./components/PublicRoute/PublicRoute";
+import { ProtectedRoute } from "./components/ProtectedRoute/ProtectedRoute";
 import { NavBar } from "./components/NavBar/NavBar";
 import { Login } from "./components/Login/Login";
 
@@ -25,6 +25,7 @@ function App() {
 
         
       </Routes>
+      {/* <ProtectedRoute/> */}
     </div>
   );
 }

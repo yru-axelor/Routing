@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 import styles from "./NavBar.module.css";
 export const NavBar = ({ isLogin }) => {
   return (
-    <ul>
+    <div className={styles.container}>
+    <ul className={styles.ul}>
       <NavLink to={"/"} className={styles.a}>
         Home
       </NavLink>
@@ -11,6 +12,6 @@ export const NavBar = ({ isLogin }) => {
         Protected Page
       </NavLink>
       {!isLogin && <NavLink to={"/login"}>Login</NavLink>}
-    </ul>
+    </ul></div>
   );
 };
